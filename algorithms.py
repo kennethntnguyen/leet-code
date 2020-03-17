@@ -36,6 +36,7 @@ def reverse(x: int) -> int:
         return 0
     else:
         return reversed_number
+# This algorithm does not work correctly at the moment.
 def countPrimes(n: int) -> int:
     n -= 1
     number_of_primes = 0
