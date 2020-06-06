@@ -34,7 +34,7 @@ Source: https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-L
 - [ ] Climbing Stairs - https://leetcode.com/problems/climbing-stairs/
 - [ ] Coin Change - https://leetcode.com/problems/coin-change/
 - [ ] Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/
-- [ ] Longest Common Subsequence -
+- [ ] Longest Common Subsequence - https://leetcode.com/problems/longest-common-subsequence/
 - [ ] Word Break Problem - https://leetcode.com/problems/word-break/
 - [ ] Combination Sum - https://leetcode.com/problems/combination-sum-iv/
 - [ ] House Robber - https://leetcode.com/problems/house-robber/
