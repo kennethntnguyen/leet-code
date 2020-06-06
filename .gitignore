@@ -353,6 +353,3 @@ MigrationBackup/
 # Scratch/test files
 scratch_book.py
 test.py
-
-# vs-code
-.vscode/
