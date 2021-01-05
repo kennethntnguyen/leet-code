@@ -72,3 +72,13 @@ def maxProfit(prices: List[int]) -> int:
         max_profit = max(max_profit, profit)
     return max_profit
 
+# 217. Contains Duplicate
+
+def containsDuplicate(nums: List[int]) -> bool:
+    number_set = {} 
+    for num in nums:
+        if num not in number_set.keys():
+            number_set[num] = 0
+        else:
+            number_set[num] += 1
+    return sum(number_set.values()) > 0
