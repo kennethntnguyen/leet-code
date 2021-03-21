@@ -1,8 +1,6 @@
 from typing import List
 
 # 7. Reverse Integer
-
-
 def reverse(x: int) -> int:
     if (-9 < x) and (x < 9):
         return x
@@ -29,8 +27,6 @@ def reverse(x: int) -> int:
         return reversed_number
 
 # 344. Reverse String
-
-
 def reverseString(s: List[str]) -> None:
     """
     Do not return anything, modify s in-place instead.
@@ -44,8 +40,6 @@ def reverseString(s: List[str]) -> None:
         j -= 1
 
 # 1. Two Sum
-
-
 def twoSum(nums: List[int], target: int) -> List[int]:
     num = dict(zip(nums, list(range(len(nums)))))
     i = 0
@@ -61,8 +55,6 @@ def twoSum(nums: List[int], target: int) -> List[int]:
             i += 1
 
 # 121. Best Time to Buy and Sell Stock
-
-
 def maxProfit(prices: List[int]) -> int:
     max_profit = 0
     min_price = float('inf')
@@ -73,7 +65,6 @@ def maxProfit(prices: List[int]) -> int:
     return max_profit
 
 # 217. Contains Duplicate
-
 def containsDuplicate(nums: List[int]) -> bool:
     number_set = {} 
     for num in nums:
@@ -82,3 +73,33 @@ def containsDuplicate(nums: List[int]) -> bool:
         else:
             number_set[num] += 1
     return sum(number_set.values()) > 0
+
+# 238. Product of Array Except Self
+def productExceptSelf(nums: List[int]) -> List[int]:
+    total = 1
+    zero = False
+    
+    for num in nums:
+        if zero == False:
+            if num == 0:
+                zero = True
+            else:
+                total *= num
+        else:
+            if num != 0:
+                total *= num
+            else:
+                total = 0
+                return [total] * len(nums)
+    
+    N = len(nums)
+    total = [total] * N
+    
+    for i in range(N):
+        if zero == False:
+            total[i] = int(total[i]/nums[i]) 
+        else:
+            if nums[i] != 0:
+                total[i] = 0
+                
+    return total
